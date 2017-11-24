@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Packaging") {
             steps {
-                sh "./gradlew build"
+                sh "./mvn install"
             }
         }
         stage("Docker build") {
